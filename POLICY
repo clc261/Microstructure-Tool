@@ -5,15 +5,22 @@ a strict naming and organization policy is needed open sourcing the addition of 
 
 
 
-NAMING:
-IMAGES - In order to maintain a concise and organized inventory of images, we must ask that everyone follow a strict naming convention.
-All images must be placed into the images folder and be named accordingly, (Element abr 1)_(Element abr. 2)_(tempautre of heating)C_'''''.JPG,
-Where element 1 is the element in which its chemical smybol would come first in alphobetical order and element 2 is the chemical smybol that
-would come second. The temputure should be listed as the numeric number in celcius and then a C.
+NAMING IMAGES - 
 
-Example: Cu_Ni_500C_'''''.JPG
-image representing the images related to Copper Nichol Alloys heated to 500C with a '''' composition.
+In order to maintain a concise and organized inventory of images, we must ask that everyone follow a strict naming convention.
+All images must be placed into the images folder and be named accordingly,
 
+(Element abr 1)(Element abr. 2)?!.PNG
+
+Where:
+(Element abr 1) is the element abrivasion in which appears on the left of the phase diagram
+(Element abr 2) is the element abrivasion in which appears on the right of the phase diagram
+? the letter corresponding to the letter listed on the Drop Down Menu for Composition
+! The letter corresponding to the letter listed on the Drop Down Menu for the Tempature
+
+
+Example: CuNiab.PNG
+Gets image of Cupper Nickel of composition a and tempature b
 
 
 ORGANIZATION:
