@@ -9,6 +9,7 @@ https://clc261.github.io/Microstructure-Tool/
 Intentions:
 Our Intentions for the creation of this webpage is to create an interactive and user-friendly source for reliable information on the microstructures of all material. We understand the microstructures have historically not been one of the most enjoyable courses taken among engineers, but we believe that there is a way to make this subject fun and enjoyable. This webpage represents what we believe to be the learning tool to do just this. 
 
+
 How:
 This webpage represents a learning tool that will correlate materials at different temperatures and represent them visually to the user. The website prompts the user to choose from a list of materials. This will navigate the user to the phase diagram for the material of their choice. From here, the user will be able to choose from 3 distinct compositions that they would like to examine more closely and examine them at multiple temperatures.
 
