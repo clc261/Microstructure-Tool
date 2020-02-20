@@ -1,10 +1,18 @@
 
 
 In order to maintain the proper organization of the material on this webpage,
-a strict naming and organization policy is needed for the addition of new materials and information
+a strict naming and organization policy is needed open sourcing the addition of new materials and information.
+
 
 
 NAMING:
+IMAGES - In order to maintain a concise and organized inventory of images, we must ask that everyone follow a strict naming convention.
+All images must be placed into the images folder and be named accordingly, (Element abr 1)_(Element abr. 2)_(tempautre of heating)C_'''''.JPG,
+Where element 1 is the element in which its chemical smybol would come first in alphobetical order and element 2 is the chemical smybol that
+would come second. The temputure should be listed as the numeric number in celcius and then a C.
+
+Example: Cu_Ni_500C_'''''.JPG
+image representing the images related to Copper Nichol Alloys heated to 500C with a '''' composition.
 
 
 
