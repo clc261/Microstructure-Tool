@@ -52,7 +52,32 @@
 
   <section id="about">
     <div class="container">
+      <h2 style="text-align: center">Practical Metallurgy</h2>
       <div class="row">
+        
+        <table style="margin-left:auto;margin-right:auto;">
+              <tr>
+                <td colspan="2" style="text-align: center"> <p class="lead">If had to defend yourself from an unknown monster, what weapon would you choose?</p> </td>
+              </tr>
+              <tr>
+                <td align="center"><img src="images/sword.jpg" alt="River Arun" style="width:400px;height:300px"></td>
+                <td align="center"><img src="images/sticks.png" alt="River Arun" style="width:400px;height:300px"></td>
+            </tr>
+            <tr>
+                <td style="text-align: center"><input type="radio" name="chooseWeapon" id="copper" oninput="sword()"> </td>
+                <td style="text-align: center"><input type="radio" name="chooseWeapon" id="stick"  oninput="stick()"> </td>
+            </tr>
+              <tr>
+                <td style="text-align: center"><p class="lead">A Copper Sword</p></td>
+                <td style="text-align: center"><p class="lead">A Hefty Stick</p></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center"> <p id="answer"> <br/><br/><br/></p> </td>
+            </tr>
+          </table>
+        
+        
+        
         <div class="col-lg-8 mx-auto">
           <h2>About this page</h2>
           <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
@@ -106,7 +131,19 @@
 
   <!-- Custom JavaScript for this theme -->
   <script src="js/scrolling-nav.js"></script>
-
+  
+  <!-- Quiz JavaScript -->
+  <script>
+  function sword() {
+    var element = document.getElementById("answer");
+    element.innerHTML = "Incorrect: When choosing between a copper sword and a stick, the stick would always win! Copper only becomes strong when you add another element such as lead to the mix. When you add two elements together such as copper and lead the melting point and phase distribution will change depending on the temperature and the composition.";
+  }
+  function stick() {
+    var element = document.getElementById("answer");
+    element.innerHTML = "Correct: When choosing between a copper sword and a stick, the stick would always win! Copper only becomes strong when you add another element such as lead to the mix. When you add two elements together such as copper and lead the melting point and phase distribution will change depending on the temperature and the composition.";
+  }
+</script>
+  
 </body>
 
 </html>
