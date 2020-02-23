@@ -89,30 +89,83 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2><center>Microsctructure and Phase Diagram Tool</center></h2>
-         <p class="lead">  In this exercise you can learn more about how the microstructure will change based on the composition, and the temperature. To get started choose a composition to get started with.</p> 
-
-            <script type="application/javascript">
-     
-     function SelectImg(){
-
-        var rbtn1 = document.getElementById("rbtn1");
-        var img = document.getElementById("img");
-        img.src = rbtn1.checked ? "images/PbSn1.png" : "images/CuNi1.png";
-        img.alt = rbtn1.checked ? "PbSn" : "NiCu";
-
-     }
-
-  </script>
-              <form>
-    <label class="radio-inline">
-      <input type="radio" id="rbtn1" name="elem" onclick="SelectImg()" checked >Pb and Sn
-    </label>
-    <label class="radio-inline">
-      <input type="radio" id="rbtn2" name="elem" onclick="SelectImg()" >Cu and Ni
-    </label>
-  </form>
+         <p class="lead">  In this exercise you can learn more about how the microstructure will change based on the composition, and the temperature. To get started choose a composition to get started with.</p>
+<script>
+	        function validate()
+        {
+            var a = document.getElementById("comp");
+			var b = document.getElementById("temp");
+            if ( a.options[a.selectedIndex].value == "mat1" && b.options[b.selectedIndex].value == "temp1" )
+            {
+                document.getElementById("img1").src = "images/PbSn_ae.png"
+            }
+			else if ( a.options[a.selectedIndex].value == "mat1" && b.options[b.selectedIndex].value == "temp2" )
+            {
+                document.getElementById("img1").src = "images/PbSn_af.png"
+            }
+			else if ( a.options[a.selectedIndex].value == "mat1" && b.options[b.selectedIndex].value == "temp3" )
+            {
+                document.getElementById("img1").src = "images/PbSn_ag.png"
+            }
+			else if ( a.options[a.selectedIndex].value == "mat2" && b.options[b.selectedIndex].value == "temp1" )
+            {
+                document.getElementById("img1").src = "images/PbSn_be.png"
+            }
+			else if ( a.options[a.selectedIndex].value == "mat2" && b.options[b.selectedIndex].value == "temp2" )
+            {
+                document.getElementById("img1").src = "images/PbSn_bf.png"
+            }
+			else if ( a.options[a.selectedIndex].value == "mat2" && b.options[b.selectedIndex].value == "temp3" )
+            {
+                document.getElementById("img1").src = "images/PbSn_bg.png"
+            }
+			else if ( a.options[a.selectedIndex].value == "mat3" && b.options[b.selectedIndex].value == "temp1" )
+            {
+                document.getElementById("img1").src = "images/PbSn_ce.png"
+            }
+			else if ( a.options[a.selectedIndex].value == "mat3" && b.options[b.selectedIndex].value == "temp2" )
+            {
+                document.getElementById("img1").src = "images/PbSn_cf.png"
+            }
+			else if ( a.options[a.selectedIndex].value == "mat3" && b.options[b.selectedIndex].value == "temp3" )
+            {
+                document.getElementById("img1").src = "images/PbSn_cg.png"
+            }
+			else if ( a.options[a.selectedIndex].value == "mat4" && b.options[b.selectedIndex].value == "temp1" )
+            {
+                document.getElementById("img1").src = "images/PbSn_de.png"
+            }
+			else if ( a.options[a.selectedIndex].value == "mat4" && b.options[b.selectedIndex].value == "temp2" )
+            {
+                document.getElementById("img1").src = "images/PbSn_df.png"
+            }
+			else if ( a.options[a.selectedIndex].value == "mat4" && b.options[b.selectedIndex].value == "temp3" )
+            {
+                document.getElementById("img1").src = "images/PbSn_dg.png"
+            }
+        }
+	</script>
+             <form action="#" method="get" onsubmit="validate()">
+					<fieldset>
+						<legend>Material Properties</legend>
+						<label for="Composition:"></label><br>
+						<select id= "comp">
+						<option value = "mat1">10 wt% Sn</option>
+						<option value = "mat2">30 wt% Sn</option>
+						<option value = "mat3">61.9 wt% Sn</option>
+						<option value = "mat4">80 wt% Sn</option>
+						</select><br>
+						<label for="Temperature"></label><br>
+						<select id="temp">
+						<option value = "temp1">300 C</option>
+						<option value = "temp2">200 C</option>
+						<option value = "temp3">100 C</option>
+						</select><br>
+						<input type = "submit">
+					</fieldset>
+			</form>
           
-        <img  style="width:750px;height:600px" align="center" src="images/PbSn1.png" alt="PbSn" id="img">
+     <img  style="width:1000px;height:600px" align="center" src="images/PbSn1.png" alt="PbSn" id="img1">
         </div>
       </div>
     </div>
