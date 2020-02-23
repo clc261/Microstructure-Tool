@@ -99,11 +99,20 @@
         var img = document.getElementById("img");
         img.src = rbtn1.checked ? "images/PbSn1.png" : "images/CuNi1.png";
         img.alt = rbtn1.checked ? "PbSn" : "NiCu";
-
+	     
+	if (rbtn1.checked==true){
+            var paragraph1 = document.getElementById("paragraph1");
+            paragraph1.innerHTML = "To read this diagram, on the far left the metal is pure lead (Pb) as as you move farther right on the graph more and more tin (Sn) is added. Depending on the amount of tin added the properties of the metal will change like its strength and melting point. The amount of tin added is read as 10% wt Sn and the number changes for how much tin is added. <br><br>The graph is separated into different sections by the black lines. The top area labeled L is when the metal is fully liquid. The section labeled alpha is solid lead. The section labeled apha+L is where the metal is partly liquid and partly solid lead, while the area L+beta is partly liquid and partly solid tin. The last lower section is alpha + beta and it is a mixture of solid tin and lead mixed together. <br><br>The red lines on the graph represent different major property transitions that can occur when moving from a high temperature to a low one at a specific composition. Pick a composition and temperature in the next section to see the microstructure of the metal at that point.";
+         }
+         else if (rbtn1.checked==false) {
+            var paragraph1 = document.getElementById("paragraph1");
+            paragraph1.innerHTML = "To read this diagram, on the far left the metal is considered pure copper (Cu) with no nickel (Ni) added. As you move farther right on the graph more and more nickel is added to the metal until the metal is pure nickel as seen on the far right of the graph. Depending on the amount of nickel added the properties of the metal will change like its strength and melting point. The amount of nickel added is read as 10% wt Ni and the number changes for how much nickel is added. <br><br>The graph is separated into different sections by black lines. The top section is labeled liquid and is when the two different metals are completely melted in a liquid form. The next section is L+alpha and this is where the two metals are mixed depending on their concentrations but it is a mixture of both liquid phases solid phases. The last section is at the bottom and is labeled alpha and the phase is purely solid and is a mixture of copper and nickel.<br><br>The red line on the graph represents a major property transition that can occur when moving from a high temperature to a low one at a specific composition. Pick a composition and temperature in the next section to see the microstructure of the metal at that point.";
+        }
      }
 
   </script>
-              <form>
+		
+  <form>
     <label class="radio-inline">
       <input type="radio" id="rbtn1" name="elem" onclick="SelectImg()" checked >Pb and Sn
     </label>
@@ -112,7 +121,10 @@
     </label>
   </form>		
 		
-		<img src="images/PbSn1.png" id='img'>
+  <img src="images/PbSn1.png" id='img'>
+  <br>
+  <br>
+  <p id="paragraph1">To read this diagram, on the far left the metal is pure lead (Pb) as as you move farther right on the graph more and more tin (Sn) is added. Depending on the amount of tin added the properties of the metal will change like its strength and melting point. The amount of tin added is read as 10% wt Sn and the number changes for how much tin is added.<br><br>The graph is separated into different sections by the black lines. The top area labeled L is when the metal is fully liquid. The section labeled alpha is solid lead. The section labeled apha+L is where the metal is partly liquid and partly solid lead, while the area L+beta is partly liquid and partly solid tin. The last lower section is alpha + beta and it is a mixture of solid tin and lead mixed together. <br><br>The red lines on the graph represent different major property transitions that can occur when moving from a high temperature to a low one at a specific composition. Pick a composition and temperature in the next section to see the microstructure of the metal at that point.</p>
 		
 		
 		
