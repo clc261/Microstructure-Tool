@@ -89,8 +89,34 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2><center>Microsctructure and Phase Diagram Tool</center></h2>
-         <p class="lead">  In this exercise you can learn more about how the microstructure will change based on the composition, and the temperature. To get started choose a composition to get started with.</p>
-<script>
+ 		<p class="lead">  In this exercise you can learn more about how the microstructure will change based on the composition, and the temperature. To get started choose a composition to get started with.</p>
+
+          <script type="application/javascript">
+     
+     function SelectImg(){
+
+        var rbtn1 = document.getElementById("rbtn1");
+        var img = document.getElementById("img");
+        img.src = rbtn1.checked ? "images/PbSn1.png" : "images/CuNi1.png";
+        img.alt = rbtn1.checked ? "PbSn" : "NiCu";
+
+     }
+
+  </script>
+              <form>
+    <label class="radio-inline">
+      <input type="radio" id="rbtn1" name="elem" onclick="SelectImg()" checked >Pb and Sn
+    </label>
+    <label class="radio-inline">
+      <input type="radio" id="rbtn2" name="elem" onclick="SelectImg()" >Cu and Ni
+    </label>
+  </form>		
+		
+		
+		
+		
+		
+		<script>
 	        function validate()
         {
             var a = document.getElementById("comp");
