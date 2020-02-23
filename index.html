@@ -205,13 +205,13 @@
                 var paragraph2 = document.getElementById("paragraph2");
                 paragraph2.innerHTML = "This microstructure shown above is when the metal is cooled to a state where it is in the  beta + alpha phase. Here the metal is solid but a mixture of Sn and Pb. The mixture is mostly Seen so the color is orange with small Pb particles in green.";
             }
-		else if ( a.options[a.selectedIndex].value == "mat5" && b.options[b.selectedIndex].value == "temp1" )
+		else if ( a.options[a.selectedIndex].value == "mat5" && b.options[b.selectedIndex].value == "temp2" )
             {
                 document.getElementById("img1").src = "images/CuNi_ab.png"
                 var paragraph2 = document.getElementById("paragraph2");
                 paragraph2.innerHTML = "The microstructure shown above is the process of cooling the metal from its liquid state to its solid state. It starts in the L phase where it is completely liquid, then it cools through the L+alpha section where solid particles start to form as shown in green. The last phase is when the metal becomes completely solid in the alpha section, as seen with the completely green structure and the dark green lines as grain boundaries.";
             }
-			else if ( a.options[a.selectedIndex].value == "mat5" && b.options[b.selectedIndex].value == "temp2" )
+			else if ( a.options[a.selectedIndex].value == "mat5" && b.options[b.selectedIndex].value == "temp3" )
             {
                 document.getElementById("img1").src = "images/CuNi_ac.png"
                 var paragraph2 = document.getElementById("paragraph2");
@@ -220,6 +220,8 @@
 		else
 	    {
 		document.getElementById("img1").src = ""
+		var paragraph2 = document.getElementById("paragraph2");
+                paragraph2.innerHTML = "This microstructure doesn't exist.
 	    }
         }
 	</script>
@@ -228,10 +230,10 @@
 						<legend>Material Properties</legend>
 						<label for="Composition:"></label><br>
 						<select id= "comp">
-						<option value = "mat1">10 wt% Sn</option>
-						<option value = "mat2">30 wt% Sn</option>
-						<option value = "mat3">61.9 wt% Sn</option>
-						<option value = "mat4">80 wt% Sn</option>
+						<option value = "mat1">Pb and 10 wt% Sn</option>
+						<option value = "mat2">Pb and 30 wt% Sn</option>
+						<option value = "mat3">Pb and 61.9 wt% Sn</option>
+						<option value = "mat4">Pb and 80 wt% Sn</option>
 						<option value = "mat5">Cu and Ni</option>
 						</select><br>
 						<label for="Temperature"></label><br>
