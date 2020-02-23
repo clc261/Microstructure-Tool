@@ -97,6 +97,29 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2>Services we offer</h2>
+          
+            <script type="application/javascript">
+     
+     function SelectImg(){
+
+        var rbtn1 = document.getElementById("rbtn1");
+        var img = document.getElementById("img");
+        img.src = rbtn1.checked ? "PbSn1.png" : "CuNi1.png;
+        img.alt = rbtn1.checked ? "PbSn" : "NiCu";
+
+     }
+
+  </script>
+              <form>
+    <label class="radio-inline">
+      <input type="radio" id="rbtn1" name="elem" onclick="SelectImg()" checked >Pb and Sn
+    </label>
+    <label class="radio-inline">
+      <input type="radio" id="rbtn2" name="elem" onclick="SelectImg()" >Cu and Ni
+    </label>
+  </form>
+
+  <img src="PbSn1.png" alt="PbSn" id="img">
           <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
         </div>
       </div>
