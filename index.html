@@ -169,6 +169,18 @@
             {
                 document.getElementById("img1").src = "images/PbSn_dg.png"
             }
+		else if ( a.options[a.selectedIndex].value == "mat5" && b.options[b.selectedIndex].value == "temp1" )
+            {
+                document.getElementById("img1").src = "images/CuNi_ab.png"
+            }
+			else if ( a.options[a.selectedIndex].value == "mat5" && b.options[b.selectedIndex].value == "temp2" )
+            {
+                document.getElementById("img1").src = "images/CuNi_ac.png"
+            }
+		else
+	    {
+		document.getElementById("img1").src = ""
+	    }
         }
 	</script>
              <form action="#" method="get" onsubmit="validate()">
@@ -180,6 +192,7 @@
 						<option value = "mat2">30 wt% Sn</option>
 						<option value = "mat3">61.9 wt% Sn</option>
 						<option value = "mat4">80 wt% Sn</option>
+						<option value = "mat5">Cu and Ni</option>
 						</select><br>
 						<label for="Temperature"></label><br>
 						<select id="temp">
@@ -191,7 +204,7 @@
 					</fieldset>
 			</form>
           
-     <img  style="width:1000px;height:600px" align="center" src="images/PbSn_ae.png" alt="PbSn" id="img1">
+     <img  style="width:1000px;height:600px" align="center" src="images/PbSn_ae.png" id="img1">
         </div>
       </div>
     </div>
